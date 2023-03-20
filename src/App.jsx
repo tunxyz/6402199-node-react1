@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_API_URL}/users`)
+      .get(`http://192.168.56.1:5000/users`)
       .then((response) => {
         setUsers(response.data);
       })
